@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rate Music Site-suggest</title>
+</head>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+<h1>suggest</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      </button>
+      <a class="navbar-brand" href="{{url_for('menu')}}">menu</a>
+      <a class="navbar-brand" href="{{url_for('pop')}}">pop</a>
+      <a class="navbar-brand" href="{{url_for('pop')}}">rock</a>
+      <a class="navbar-brand" href="{{url_for('pop')}}">edm</a>
+      <a class="navbar-brand" href="{{url_for('suggest')}}">suggest</a>
+    </div>
+</nav>
+
+<form action="{{url_for('sendsong')}}">
+  <h4>song name</h4>
+  <input class='form-control' type="text" name="songname" placeholder="song name"> 
+  <input class='form-control' type="submit" value="suggest!">
+</form>
+
+<form action="mailto:harelbartuv@gmail.com" method="post" enctype="text/plain">
+Name:<br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="mail"><br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+</form>
+
+<body>
+
+
+</body>
+</html>
