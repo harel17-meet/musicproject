@@ -26,10 +26,7 @@ def about():
 def suggest():
 	return render_template('suggest.html')
 
-@app.route('/sendsong')
-def sendsong():
-	name=form.request['songname']
-	return redirect(url_for('menu'))
+
 
 if __name__ == '__main__':
 	app.run(debug=True)

@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<h1>edm</h1>
+<h1>rock</h1>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -18,38 +18,40 @@
       </button>
       <a class="navbar-brand" href="{{url_for('menu')}}">menu</a>
       <a class="navbar-brand" href="{{url_for('pop')}}">pop</a>
-      <a class="navbar-brand" href="{{url_for('pop')}}">rock</a>
-      <a class="navbar-brand" href="{{url_for('pop')}}">edm</a>
+      <a class="navbar-brand" href="{{url_for('rock')}}">rock</a>
+      <a class="navbar-brand" href="{{url_for('edm')}}">edm</a>
       <a class="navbar-brand" href="{{url_for('suggest')}}">suggest</a>
+      <a class="navbar-brand" href="{{url_for('about')}}">about</a>
     </div>
 </nav>
 <div>
 	<h3>number 1:</h3>
-	<a href=""></a>
+	<a href="https://www.youtube.com/watch?v=1w7OgIMMRc4">Guns N' Roses - Sweet Child O' Mine</a>
 	<button type="button">menu</button>
 
 
 	<h3>number 2:</h3>
-	<a href=""></a>
+	<a href="https://www.youtube.com/watch?v=Rbm6GXllBiw">Guns N' Roses - Paradise City</a>
 	<button type="button">menu</button>
 
 
 	<h3>number 3:</h3>
-	<a href=""></a>
+	<a href="https://www.youtube.com/watch?v=8SbUC-UaAxE">Guns N' Roses - November Rain</a>
 	<button type="button">menu</button>
 
 
 	<h3>number 4:</h3>
-	<a href=""></a>
+	<a href="https://www.youtube.com/watch?v=zRIbf6JqkNc">Guns N' Roses - Don't Cry</a>
 	<button type="button">menu</button>
 
 
 	<h3>number 5:</h3>
-	<a href=""></a>
+	<a href="https://www.youtube.com/watch?v=ErvgV4P6Fzc">Guns N' Roses - Patience</a>
 	<button type="button">menu</button>
 	
-	<h3>suggest a song:</h3>
-	<button type="button">suggest!</button>
+	
+	<h5>suggest a song:</h5>
+	<a href="{{url_for('suggest')}}"><button type="button">suggest song!</button></a>
 
 </div>
 

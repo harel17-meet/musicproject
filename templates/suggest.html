@@ -18,31 +18,21 @@
       </button>
       <a class="navbar-brand" href="{{url_for('menu')}}">menu</a>
       <a class="navbar-brand" href="{{url_for('pop')}}">pop</a>
-      <a class="navbar-brand" href="{{url_for('pop')}}">rock</a>
-      <a class="navbar-brand" href="{{url_for('pop')}}">edm</a>
+      <a class="navbar-brand" href="{{url_for('rock')}}">rock</a>
+      <a class="navbar-brand" href="{{url_for('edm')}}">edm</a>
       <a class="navbar-brand" href="{{url_for('suggest')}}">suggest</a>
+      <a class="navbar-brand" href="{{url_for('about')}}">about</a>
     </div>
 </nav>
+<input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+<input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+<input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+<textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+<button type="submit" class="btn btn-xl">Send Message</button>
+<a href="{{url_for('menu')}}"></a>
 
-<form action="{{url_for('sendsong')}}">
-  <h4>song name</h4>
-  <input class='form-control' type="text" name="songname" placeholder="song name"> 
-  <input class='form-control' type="submit" value="suggest!">
-</form>
-
-<form action="mailto:harelbartuv@gmail.com" method="post" enctype="text/plain">
-Name:<br>
-<input type="text" name="name"><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Comment:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
-</form>
 
 <body>
-
 
 </body>
 </html>
